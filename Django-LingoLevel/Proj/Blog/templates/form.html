@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Lingolevel  </title>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+        <h1>Here we have some questions that you should answer them to recognize your English level. It would help you to boost your knowledge.At the end we will show your result and give you some advices about how can you improve your rank and which works help you.<br>Let's go!</h1>
+        <style>
+            h1{
+                font-size: 40px; 
+            }
+            body{
+            background-color:rgb(47, 170, 241);
+            }
+            body{
+                font-family: 'Caveat', cursive;
+            }
+            input{
+                font-size: 20px; 
+            }
+        </style>
+        
+    </head>
+    <body>
+          
+            <form action="{% url 'form' %}" method="POST">
+                <label for="fname">What is your name? </label><br>
+                <input type="text" name="fname" placeholder="First name"><br>
+                    <label for="lname">What is your last name? </label><br>
+                    <input type="text" name="lname" placeholder="Last name"><br>
+
+
+                <h2 style="color:rgb(141, 2, 122)">Vocabulary</h2>
+            <style>
+            body {
+                font-size: 25px;  
+                }
+                </style>
+
+
+                    <br><br>1.___ name is Robert<br>
+                    <input type="radio" id=" Me" name="v1" value=" Me" checked>
+                    <label for=" Me"> Me </label>
+                    
+                    <input type="radio" id="I" name="v1" value="I">
+                    <label for="I">I </label>
+                    
+                    <input type="radio" id="My" name="v1" value="My">
+                    <label for="My">My </label>
+
+
+                    <br><br>2.Those shoes are very___.<br>
+                    <input type="radio" id=" expensive" name="v2" value=" expensive">
+                    <label for=" expensive"> expensive </label>
+                    
+                    <input type="radio" id="a lot" name="v2" value="a lot">
+                    <label for="a lot">a lot </label>
+                    
+                    <input type="radio" id="cost" name="v2" value="cost">
+                    <label for="cost">cost </label>
+                    
+                    
+                    <br><br>3.It is a busy,___.<br>
+                    <input type="radio" id=" traffic" name="v3" value=" traffic">
+                    <label for=" traffic"> traffic </label>
+                    
+                    <input type="radio" id="quite" name="v3" value="quite">
+                    <label for="quite">quite </label>
+                    
+                    <input type="radio" id="noisy" name="v3" value="noisy">
+                    <label for="noisy">noisy </label>
+                  
+
+
+                    <br><br> 4.He didn’t ___ glasses. <br>
+                    <input type="radio" id=" put" name="v4" value=" put">
+                    <label for=" put"> put </label>
+                    
+                    <input type="radio" id="wear" name="v4" value="wear">
+                    <label for="wear">wear </label>
+                    
+                    <input type="radio" id="take" name="v4" value="take">
+                    <label for="take">take </label>
+                    
+
+                    <br><br>5.Were you _____ to open the door?<br>
+                    <input type="radio" id=" could" name="v5" value=" could">
+                    <label for=" could"> could </label>
+                    
+                    <input type="radio" id="can" name="v5" value="can">
+                    <label for="can">can </label>
+                    
+                    <input type="radio" id="able" name="v5" value="able">
+                    <label for="able">able </label>
+                    
+                    <input type="radio" id="possible" name="v5" value="possible">
+                    <label for="possible">possible </label>
+
+                    <br><br>6.Who was _____ the door?
+                    <br>
+                    <input type="radio" id=" at" name="v6" value=" at">
+                    <label for=" at"> at </label>
+                    
+                    <input type="radio" id="on" name="v6" value="on">
+                    <label for="on">on </label>
+                    
+                    <input type="radio" id="in" name="v6" value="in">
+                    <label for="in">in </label>
+                    
+                    <input type="radio" id="of" name="v6" value="of">
+                    <label for="of">of </label>
+
+                    <br><br>7. Your work is _____ better.
+                    <br>
+                    <input type="radio" id=" being" name="v7" value=" being">
+                    <label for=" being"> being </label>
+                    
+                    <input type="radio" id="doing" name="v7" value="doing">
+                    <label for="doing">doing </label>
+                    
+                    <input type="radio" id="getting" name="v7" value="getting">
+                    <label for="getting">getting </label>
+                    
+                    <input type="radio" id="falling" name="v7" value="falling">
+                    <label for="falling">falling </label>
+
+                    <br><br>8. She could play the piano _____ she could walk.
+                    <br>
+                    <input type="radio" id=" during" name="v8" value=" during">
+                    <label for=" during"> during </label>
+                    
+                    <input type="radio" id="while" name="v8" value="while">
+                    <label for="while">while </label>
+                    
+                    <input type="radio" id="as well" name="v8" value="as well">
+                    <label for="as well">as well </label>
+                    
+                    <input type="radio" id="before" name="v8" value="before">
+                    <label for="before">before </label>
+
+                    <br><br> 9.It was a difficult journey, but I _____ get home.
+                    <br>
+                    <input type="radio" id=" could" name="v9" value=" could">
+                    <label for=" could"> could </label>
+                    
+                    <input type="radio" id="managed to" name="v9" value="managed to">
+                    <label for="managed to">managed to</label>
+                    
+                    <input type="radio" id="at last" name="v9" value="at last">
+                    <label for="at last">at last</label>
+                    
+                    <input type="radio" id="was" name="v9" value="was">
+                    <label for="was">was </label>
+
+                    
+                    <br><br> 10.I _____ I had been able to meet her.
+                    <br>
+                    <input type="radio" id=" hope" name="v10" value=" hope">
+                    <label for=" hope"> hope </label>
+                    
+                    <input type="radio" id="want" name="v10" value="want">
+                    <label for="want">want</label>
+                    
+                    <input type="radio" id="think" name="v10" value="think">
+                    <label for="think">think</label>
+                    
+                    <input type="radio" id="wish" name="v10" value="wish">
+                    <label for="wish">wish </label>
+
+                    <br><br> 11.This is going to be my chance to _____ any difficulties.
+                    <br>
+                    <input type="radio" id=" repair" name="v11" value=" repair">
+                    <label for=" repair"> repair </label>
+                    
+                    <input type="radio" id="sort out " name="v11" value="sort out ">
+                    <label for="sort out ">sort out </label>
+                    
+                    <input type="radio" id="solve" name="v11" value="solve">
+                    <label for="solve">solve</label>
+                    
+                    <input type="radio" id="improve" name="v11" value="improve">
+                    <label for="improve">improve </label>
+
+                    <br><br> 12.He _____ to help me with the decorating.
+
+                    <br>
+                    <input type="radio" id=" suggested" name="v12" value=" suggested">
+                    <label for=" suggested"> suggested </label>
+                    
+                    <input type="radio" id="offered" name="v12" value="offered">
+                    <label for="offered">offered</label>
+                    
+                    <input type="radio" id="invited" name="v12" value="invited">
+                    <label for="invited">invited</label>
+                    
+                    <input type="radio" id="told" name="v12" value="told">
+                    <label for="told">told </label>
+
+
+                <h2 style="color:rgb(141, 2, 122)">Grammar</h2>
+
+                    <br><br>1.___ are you from?.<br>
+                    <input type="radio" id=" What" name="g1" value=" What">
+                    <label for=" What"> What </label>
+                    <input type="radio" id="Who" name="g1" value="Who">
+                    <label for="Who">Who</label>
+                    <input type="radio" id="Where" name="g1" value="Where">
+                    <label for="Where">Where</label>
+
+
+
+                    <br><br>2.___ some money here.<br>
+                    <input type="radio" id=" There’re" name="g2" value=" There’re">
+                    <label for=" There’re"> There’re </label>
+                    <input type="radio" id="There" name="g2" value="There">
+                    <label for="There">There</label>
+                    <input type="radio" id="There’s" name="g2" value="There’s">
+                    <label for="There’s">There’s</label>
+
+
+                    <br><br>3. She’s got ___ hair.<br>
+                    <input type="radio" id=" dark, long " name="g3" value=" dark, long ">
+                    <label for=" dark, long "> dark, long  </label>
+                    <input type="radio" id="long and dark" name="g3" value="long and dark">
+                    <label for="long and dark">long and dark</label>
+                    <input type="radio" id="long, dark" name="g3" value="long, dark">
+                    <label for="long, dark">long, dark</label>
+
+
+                    <br><br>4.I can’t __ another language. <br>
+                    <input type="radio" id=" speaking" name="g4" value=" speaking">
+                    <label for=" speaking"> speaking </label>
+                    <input type="radio" id="speak" name="g4" value="speak">
+                    <label for="speak">speak</label>
+                    <input type="radio" id="to speak" name="g4" value="to speak">
+                    <label for="to speak">to speak</label>
+
+                    <br><br>5. I like this song.__ do I. <br>
+                    <input type="radio" id=" Either" name="g5" value=" Either">
+                    <label for=" Either"> Either </label>
+                    <input type="radio" id="So" name="g5" value="So">
+                    <label for="So">So</label>
+                    <input type="radio" id="Neither" name="g5" value="Neither">
+                    <label for="Neither">Neither</label>
+
+
+
+                    <br><br> 6.They are going _____ in America next month.
+
+                    <br>
+                    <input type="radio" id=" to be" name="g6" value=" to be">
+                    <label for=" to be"> to be </label>
+                    
+                    <input type="radio" id="will be" name="g6" value="will be">
+                    <label for="will be">will be</label>
+                    
+                    <input type="radio" id="be" name="g6" value="be">
+                    <label for="be">be</label>
+                    
+                    <input type="radio" id="being" name="g6" value="being">
+                    <label for="being">being </label>
+
+                    <br><br>7. This is _____ than I thought.<br>
+                    <input type="radio" id=" bad" name="g7" value=" bad">
+                    <label for=" bad"> bad </label>
+                    
+                    <input type="radio" id="badder" name="g7" value="badder">
+                    <label for="badder">badder</label>
+                    
+                    <input type="radio" id="worse" name="g7" value="worse">
+                    <label for="worse">worse</label>
+                    
+                    <input type="radio" id="worst" name="g7" value="worst">
+                    <label for="worst">worst </label>
+
+                    <br><br> 8.I’m working _____ to pass my exam.<br>
+                    <input type="radio" id=" hardly" name="g8" value=" hardly">
+                    <label for=" hardly"> hardly </label>
+                    
+                    <input type="radio" id="much" name="g8" value="much">
+                    <label for="much">much</label>
+                    
+                    <input type="radio" id="hard" name="g8" value="hard">
+                    <label for="hard">hard</label>
+                    
+                    <input type="radio" id="good" name="g8" value="good">
+                    <label for="good">good </label>
+
+                    <br><br>9.The problem was _____ solved.<br>
+                    <input type="radio" id=" easy" name="g9" value=" easy">
+                    <label for=" easy"> easy </label>
+                    
+                    <input type="radio" id="easy to" name="g9" value="easy to">
+                    <label for="easy to">easy to</label>
+                    
+                    <input type="radio" id="an easy" name="g9" value="an easy">
+                    <label for="an easy">an easy</label>
+                    
+                    <input type="radio" id="easily" name="g9" value="easily">
+                    <label for="easily">easily </label>
+                
+                    <br><br>10.We’ll have taken our exams _____ this time next month.<br>
+                    <input type="radio" id=" by" name="g10" value=" by">
+                    <label for=" by"> by </label>
+                    
+                    <input type="radio" id="on" name="g10" value="on">
+                    <label for="on">on </label>
+                    
+                    <input type="radio" id="during" name="g10" value="during">
+                    <label for="during">during </label>
+                    
+                    <input type="radio" id="for" name="g10" value="for">
+                    <label for="for">for </label>
+
+                <h2 style="color:rgb(141, 2, 122)">Listening</h2>
+                    <h3 style="color:rgb(182, 3, 78)">elementary</h3>
+
+                    <p>listen to "Stop wasting time" and then answer questions</p>
+
+                    <audio controls>
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/LearnEnglish%20Teens%20-%20Listening%20skills%20practice%20-%20A2%20-%20Stop%20wasting%20time!.mp3" type="audio/ogg">
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/LearnEnglish%20Teens%20-%20Listening%20skills%20practice%20-%20A2%20-%20Stop%20wasting%20time!.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    <br>1. Tom doesn't know how to start studying.<br>
+                    <input type="radio" id=" True" name="l1" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l1" value="False">
+                    <label for="False">False </label>
+                    <br>2.Tom thinks his mum has helped him.<br>
+                    <input type="radio" id=" True" name="l2" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l2" value="False">
+                    <label for="False">False </label>
+
+
+                    <h3 style="color:rgb(182, 3, 78)">intermediate</h3>
+                    <p>listen to "Amazing facts" and then answer questions</p>
+                    <audio controls>
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/B1_amazing_facts.mp3" type="audio/ogg">
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/B1_amazing_facts.mp3">
+                    Your browser does not support the audio element.
+                    </audio>
+
+                    <br>3.Animals need bacteria to ...<br>
+                    <input type="radio" id=" fight diseases." name="l3" value=" fight diseases.">
+                    <label for=" fight diseases."> fight diseases. </label>
+                    <input type="radio" id="provide energy." name="l3" value="provide energy.">
+                    <label for="provide energy.">provide energy.</label>
+                    <input type="radio" id="digest food." name="l3" value="digest food.">
+                    <label for="digest food.">digest food.</label>
+
+                    <br>4.You probably have mites in your ...<br>
+                    <input type="radio" id=" hair" name="l4" value=" hair">
+                    <label for=" hair"> hair </label>
+                    <input type="radio" id="ears" name="l4" value="ears">
+                    <label for="ears">ears</label>
+                    <input type="radio" id="eyelashes" name="l4" value="eyelashes">
+                    <label for="eyelashes">eyelashes</label>
+                    <h3 style= "color:rgb( 182, 3, 78)"> upper intermediate</h3>
+                    <p>listen to "What's in a name?" and then answer questions</p>
+                    <audio controls>
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/B2_what's_in_a_name.mp3" type="audio/ogg">
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/B2_what's_in_a_name.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+
+                    <br>5.Using nouns as names is a completely new fashion.<br>
+                    <input type="radio" id=" True" name="l5" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l5" value="False">
+                    <label for="False">False </label>
+
+                    <br>6.'Rowling' is a popular name because of the Harry Potter writer.<br>
+                    <input type="radio" id=" True" name="l6" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l6" value="False">
+                    <label for="False">False </label>
+
+
+                    <h3 style="color:rgb(182, 3, 78)">advanced</h3>
+
+                    <p>listen to "Living online" and then answer questions</p>
+
+                    <audio controls>
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/1_teens_-_listening_skills_practice_-_c1_-_living_online.mp3" type="audio/ogg">
+                        <source src="https://bd748f642cf8b253d59c-5c160b94f727c0d27cbeccc854542bc6.ssl.cf1.rackcdn.com/1_teens_-_listening_skills_practice_-_c1_-_living_online.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+
+                    <br>7.Speaker thinks that the most annoying thing is when people use their phones in meetings.<br>
+                    <input type="radio" id=" True" name="l7" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l7" value="False">
+                    <label for="False">False </label>
+
+                    <br>8. Speaker thinks that young people today are aware of the drawbacks of online communication.<br>
+                    <input type="radio" id=" True" name="l8" value=" True">
+                    <label for=" True"> True </label>
+                    <input type="radio" id="False" name="l8" value="False">
+                    <label for="False">False </label>
+    
+                <br><br>
+                <input type="submit" value="Send answers">
+            </form>
+            <ul>
+
+                <!-- {% for item in my_items %}
+                <li> {{item}} </li>
+                {% endfor %} -->
+            </ul>
+    </body>
+    <script>
+    </script>
+</html>

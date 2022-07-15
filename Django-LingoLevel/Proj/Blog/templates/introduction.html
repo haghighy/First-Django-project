@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Lingolevel  </title>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <h1 style="color:rgb(205, 57, 241);">Hello!&#128522;<br>Welcome to application "Lingolevel". In this app we have some quizzes that each of them contains 30 questions. You can answer them and then see your grade and get some useful advices from us:) <br>Let's go &#128074;</h1> 
+        <style>
+            body {
+  background-image: url('https://www.modzik.com/wp-content/uploads/2017/12/playlist-modzik-115.jpg');
+}
+            body {
+            
+            font-family: 'Indie Flower', serif;
+            font-size: 20px;
+            }
+            input{
+                font-size: 27px; 
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br>
+        <h2 style="color:rgb(196, 27, 35);">If you are ready, press "Start"</h2>
+        <form action="{% url 'introduction' %}" method="POST">
+            <br>
+            <input type="submit" value="   Start   ">
+        </form>
+    </body>
+</html>
