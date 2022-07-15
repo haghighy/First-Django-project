@@ -10,25 +10,19 @@ href="https://fonts.googleapis.com/css?family=Tangerine">
             body {
   background-image: url('https://th.bing.com/th/id/OIP.Xb2-hTYg62HStxYvWZh91wAAAA?pid=Api&w=260&h=172.87234042553192&c=7');
 }
-
         h1 {text-align: center;}
         p {text-align: center;}
         div {text-align: center;}
         span {text-align: center;}
-
         body {
             
 font-family: 'Indie Flower', serif;
 font-size: 37px;
 }
-
 table, th, td {
   border: 1px solid black;
 }
 </style>
-
-        </style>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -43,63 +37,29 @@ table, th, td {
         </form>
         
         <ul>
-            <!-- {% for item in data %}
-            <h2><li>  your score is: {{item}} </li>
-            {% endfor %}</h2> -->
             <h2>your score is {{score}}</h2>
-
             {% if  score >= 0 and score < 8 %}
             Very good&#128076;You are at Beginner level.You should do more exercise to improve your English level. We recommend you that everyday at night, before sleeping,listen to some English padcasts or watch a short video in English. These works help you to boost your listening. Besides everyday learn just 10 words and try to use them in some sentences.just 10.not more:) &#x1F33A;
             {% endif %}
-
             {% if score >= 8 and score < 18 %}
             Very good&#128076;You are at Elementary level.It's OK but I think you can do more exercise to improve your English level; So we recommend you that everyday at night, before sleeping,listen to some English padcasts or watch a short video in English. These works help you to boost your listening. Besides everyday learn just 10 words and try to use them in some sentences.just 10.not more:)&#x1F33A;
             {% endif %}
-
             {% if score >= 18 and score < 24 %}
             Great&#128076;You are at Pre_Intermediate level.You should do more exercise to improve your English level. We recommend you that everyday at night, before sleeping,listen to some English padcasts or watch a short video in English. These works help you to boost your listening. Besides everyday learn just 10 words and try to use them in some sentences.just 10.not more:)&#x1F33A;
             {% endif %}
-
-
             {% if score >= 24 and score < 38 %}
             Excellent&#128076;You are at Intermediate level.I think if you do a little more exercise, your grade may be increase and your level rise to Upper_Intermediate or Advanced; and it is come off daily practise. We recommend you that everyday at night, before sleeping,listen to some English padcasts or watch a short video in English. These works help you to boost your listening. Besides everyday learn just 15 words and try to use them in some sentences.just 15.not more:)&#x1F33A;
             {% endif %}
-
             {% if score >= 38 and score < 52 %}
             Wow Excellent&#128076;You are at Upper_Intermediate level.It's very good.I think if you do a little more exercise, your grade may be increase and your level rise to  Advanced or Upper_Advanced; and it is come off daily practise. We recommend you that everyday at night, before sleeping,listen to some English padcasts or watch a short video in English. These works help you to boost your listening. Besides everyday learn just 15 words and try to use them in some sentences.just 15.not more:)&#x1F33A;
             {% endif %}
-
             {% if score >= 52 and score < 60 %}
             Incredible...&#128076;You are at Advanced level.You are very good at English, I think if you do a little more exercise, your grade may be increase and your level rise to  Upper_Advanced.You can be better than this just with a little more exercise :)&#x1F33A;
             {% endif %}
-
             {% if score >= 60 and score <= 66 %}
             Incredible...&#128076;You are at Upper_Advanced level.You are very good at English and I think you should give us some advices instead :)) You can be better than this just with a little more exercise :) Continue...&#x1F33A;
             {% endif %}
         </ul>
-    
-        <!-- <table class="table">
-            <thead>
-                <tr>
-                    <th>first name</th>
-                    <th>&nbsp;&nbsp;last name</th>
-                    <th>&nbsp;&nbsp;score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td scope="row"></td>
-                    <td>fname</td>
-                    <td>lname</td>
-                </tr>
-                <tr>
-                    <td scope="row"></td>
-                    <td>score</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table> -->
-
         <table style="width:100%">
             <tr>
               <th>Firstname</th>
@@ -112,6 +72,5 @@ table, th, td {
               <td>{{score}}</td>
             </tr>
           </table>
-
     </body>
 </html>
